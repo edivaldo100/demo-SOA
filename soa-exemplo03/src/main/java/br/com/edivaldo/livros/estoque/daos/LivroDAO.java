@@ -15,19 +15,16 @@ public class LivroDAO {
 
 	static {
 		livros = new ArrayList<>();
-		livros.add(new Livro(2012, new ArrayList<>(Arrays.asList(new Autor(
-				"Paulo Silveira", new Date()), new Autor("Adriano Almeida",
-				new Date()))), "Casa do Código", "Guia do Programador",
-				"Vá do \"nunca programei\" ..."));
+		livros.add(new Livro(2012,
+				new ArrayList<>(Arrays.asList(new Autor("Paulo Silveira", new Date()),
+						new Autor("Adriano Almeida", new Date()))),
+				"Casa do Código", "Guia do Programador", "Vá do \"nunca programei\" ..."));
 
-		livros.add(new Livro(2012, new ArrayList<>(Arrays.asList(new Autor(
-				"Vinícius Baggio Fuentes", new Date()))), "Casa do Código",
-				"Ruby on Rails", "Crie rapidamente aplicações web"));
+		livros.add(new Livro(2012, new ArrayList<>(Arrays.asList(new Autor("Vinícius Baggio Fuentes", new Date()))),
+				"Casa do Código", "Ruby on Rails", "Crie rapidamente aplicações web"));
 
-		EBook soaBook = new EBook(2012, new ArrayList<>(
-				Arrays.asList(new Autor("Alexandre Saudate", new Date()))),
-				"Casa do Código", "SOA Aplicado",
-				"Aprenda SOA de forma prática");
+		EBook soaBook = new EBook(2012, new ArrayList<>(Arrays.asList(new Autor("Alexandre Saudate", new Date()))),
+				"Casa do Código", "SOA Aplicado", "Aprenda SOA de forma prática");
 		livros.add(soaBook);
 	}
 
@@ -35,16 +32,14 @@ public class LivroDAO {
 		return livros;
 	}
 
-	public List<Livro> listarLivros(Integer numeroDaPagina,
-			Integer tamanhoDaPagina) {
+	public List<Livro> listarLivros(Integer numeroDaPagina, Integer tamanhoDaPagina) {
 		List<Livro> livros = listarLivros();
 
 		int indiceInicial = numeroDaPagina * tamanhoDaPagina;
 		int indiceFinal = indiceInicial + tamanhoDaPagina;
 
 		indiceFinal = indiceFinal > livros.size() ? livros.size() : indiceFinal;
-		indiceInicial = indiceInicial > indiceFinal ? indiceFinal
-				: indiceInicial;
+		indiceInicial = indiceInicial > indiceFinal ? indiceFinal : indiceInicial;
 
 		return livros.subList(indiceInicial, indiceFinal);
 

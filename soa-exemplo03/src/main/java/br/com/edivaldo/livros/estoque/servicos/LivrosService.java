@@ -5,15 +5,11 @@ import java.util.List;
 import javax.jws.WebParam;
 import javax.jws.WebResult;
 import javax.jws.WebService;
-import javax.xml.namespace.QName;
-import javax.xml.soap.SOAPConstants;
 import javax.xml.soap.SOAPException;
-import javax.xml.soap.SOAPFactory;
-import javax.xml.soap.SOAPFault;
 import javax.xml.ws.Endpoint;
-import javax.xml.ws.soap.SOAPFaultException;
 
 import br.com.edivaldo.livros.estoque.daos.LivroDAO;
+import br.com.edivaldo.livros.estoque.modelos.EBook;
 import br.com.edivaldo.livros.estoque.modelos.Livro;
 import br.com.edivaldo.livros.estoque.modelos.Usuario;
 
@@ -50,7 +46,7 @@ public class LivrosService {
 	public static void main(String[] args) {
 		Endpoint.publish("http://localhost:8080/livros", new LivrosService());
 		System.out.println("Serviço inicializado!");
-
+		
 	}
 
 }

@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.ws.WebFault;
 
 @WebFault(
-      targetNamespace = "http://servicos.estoque.knight.com/excecoes/",
+      targetNamespace = "http://servicos.estoque.livros.edivaldo.com.br/excecoes/",
       name = "UsuarioNaoAutorizado")
 public class UsuarioNaoAutorizadoException extends Exception {
 
