@@ -17,14 +17,14 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "ListagemLivrosService", targetNamespace = "http://servicos.estoque.knight.com/", wsdlLocation = "http://localhost:8080/livros?wsdl")
+@WebServiceClient(name = "ListagemLivrosService", targetNamespace = "http://servicos.estoque.livros.edivaldo.com.br/", wsdlLocation = "http://localhost:8080/livros?wsdl")
 public class ListagemLivrosService
     extends Service
 {
 
     private final static URL LISTAGEMLIVROSSERVICE_WSDL_LOCATION;
     private final static WebServiceException LISTAGEMLIVROSSERVICE_EXCEPTION;
-    private final static QName LISTAGEMLIVROSSERVICE_QNAME = new QName("http://servicos.estoque.knight.com/", "ListagemLivrosService");
+    private final static QName LISTAGEMLIVROSSERVICE_QNAME = new QName("http://servicos.estoque.livros.edivaldo.com.br/", "ListagemLivrosService");
 
     static {
         URL url = null;
@@ -69,7 +69,7 @@ public class ListagemLivrosService
      */
     @WebEndpoint(name = "ListagemLivrosPort")
     public ListagemLivros getListagemLivrosPort() {
-        return super.getPort(new QName("http://servicos.estoque.knight.com/", "ListagemLivrosPort"), ListagemLivros.class);
+        return super.getPort(new QName("http://servicos.estoque.livros.edivaldo.com.br/", "ListagemLivrosPort"), ListagemLivros.class);
     }
 
     /**
@@ -81,7 +81,7 @@ public class ListagemLivrosService
      */
     @WebEndpoint(name = "ListagemLivrosPort")
     public ListagemLivros getListagemLivrosPort(WebServiceFeature... features) {
-        return super.getPort(new QName("http://servicos.estoque.knight.com/", "ListagemLivrosPort"), ListagemLivros.class, features);
+        return super.getPort(new QName("http://servicos.estoque.livros.edivaldo.com.br/", "ListagemLivrosPort"), ListagemLivros.class, features);
     }
 
     private static URL __getWsdlLocation() {

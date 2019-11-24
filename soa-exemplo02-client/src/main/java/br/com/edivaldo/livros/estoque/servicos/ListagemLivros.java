@@ -18,7 +18,7 @@ import javax.xml.ws.ResponseWrapper;
  * Generated source version: 2.2
  * 
  */
-@WebService(name = "ListagemLivros", targetNamespace = "http://servicos.estoque.knight.com/")
+@WebService(name = "ListagemLivros", targetNamespace = "http://servicos.estoque.livros.edivaldo.com.br/")
 @XmlSeeAlso({
     ObjectFactory.class
 })
@@ -32,9 +32,9 @@ public interface ListagemLivros {
      */
     @WebMethod
     @WebResult(name = "livro", targetNamespace = "")
-    @RequestWrapper(localName = "listarLivros", targetNamespace = "http://servicos.estoque.knight.com/", className = "br.com.edivaldo.livros.estoque.servicos.ListarLivros")
-    @ResponseWrapper(localName = "listarLivrosResponse", targetNamespace = "http://servicos.estoque.knight.com/", className = "br.com.edivaldo.livros.estoque.servicos.ListarLivrosResponse")
-    @Action(input = "http://servicos.estoque.knight.com/ListagemLivros/listarLivrosRequest", output = "http://servicos.estoque.knight.com/ListagemLivros/listarLivrosResponse")
+    @RequestWrapper(localName = "listarLivros", targetNamespace = "http://servicos.estoque.livros.edivaldo.com.br/", className = "br.com.edivaldo.livros.estoque.servicos.ListarLivros")
+    @ResponseWrapper(localName = "listarLivrosResponse", targetNamespace = "http://servicos.estoque.livros.edivaldo.com.br/", className = "br.com.edivaldo.livros.estoque.servicos.ListarLivrosResponse")
+    @Action(input = "http://servicos.estoque.livros.edivaldo.com.br/ListagemLivros/listarLivrosRequest", output = "http://servicos.estoque.livros.edivaldo.com.br/ListagemLivros/listarLivrosResponse")
     public List<Livro> listarLivros();
 
     /**
@@ -46,9 +46,9 @@ public interface ListagemLivros {
      */
     @WebMethod
     @WebResult(name = "livro", targetNamespace = "")
-    @RequestWrapper(localName = "listarLivrosPaginacao", targetNamespace = "http://servicos.estoque.knight.com/", className = "br.com.edivaldo.livros.estoque.servicos.ListarLivrosPaginacao")
-    @ResponseWrapper(localName = "listarLivrosPaginacaoResponse", targetNamespace = "http://servicos.estoque.knight.com/", className = "br.com.edivaldo.livros.estoque.servicos.ListarLivrosPaginacaoResponse")
-    @Action(input = "http://servicos.estoque.knight.com/ListagemLivros/listarLivrosPaginacaoRequest", output = "http://servicos.estoque.knight.com/ListagemLivros/listarLivrosPaginacaoResponse")
+    @RequestWrapper(localName = "listarLivrosPaginacao", targetNamespace = "http://servicos.estoque.livros.edivaldo.com.br/", className = "br.com.edivaldo.livros.estoque.servicos.ListarLivrosPaginacao")
+    @ResponseWrapper(localName = "listarLivrosPaginacaoResponse", targetNamespace = "http://servicos.estoque.livros.edivaldo.com.br/", className = "br.com.edivaldo.livros.estoque.servicos.ListarLivrosPaginacaoResponse")
+    @Action(input = "http://servicos.estoque.livros.edivaldo.com.br/ListagemLivros/listarLivrosPaginacaoRequest", output = "http://servicos.estoque.livros.edivaldo.com.br/ListagemLivros/listarLivrosPaginacaoResponse")
     public List<Livro> listarLivrosPaginacao(
         @WebParam(name = "arg0", targetNamespace = "")
         int arg0,

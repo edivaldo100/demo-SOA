@@ -22,7 +22,7 @@ public class AutoresService {
    }
 
    public static void main(String[] args) {
-      Endpoint.publish("http://localhost:8080/autores", new AutoresService());
+      Endpoint.publish("http://localhost:8081/autores", new AutoresService());
 
    }
 

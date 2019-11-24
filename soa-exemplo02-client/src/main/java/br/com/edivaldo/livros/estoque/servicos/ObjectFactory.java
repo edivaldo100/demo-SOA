@@ -24,10 +24,10 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _ListarLivros_QNAME = new QName("http://servicos.estoque.knight.com/", "listarLivros");
-    private final static QName _ListarLivrosPaginacao_QNAME = new QName("http://servicos.estoque.knight.com/", "listarLivrosPaginacao");
-    private final static QName _ListarLivrosResponse_QNAME = new QName("http://servicos.estoque.knight.com/", "listarLivrosResponse");
-    private final static QName _ListarLivrosPaginacaoResponse_QNAME = new QName("http://servicos.estoque.knight.com/", "listarLivrosPaginacaoResponse");
+    private final static QName _ListarLivros_QNAME = new QName("http://servicos.estoque.livros.edivaldo.com.br/", "listarLivros");
+    private final static QName _ListarLivrosPaginacao_QNAME = new QName("http://servicos.estoque.livros.edivaldo.com.br/", "listarLivrosPaginacao");
+    private final static QName _ListarLivrosResponse_QNAME = new QName("http://servicos.estoque.livros.edivaldo.com.br/", "listarLivrosResponse");
+    private final static QName _ListarLivrosPaginacaoResponse_QNAME = new QName("http://servicos.estoque.livros.edivaldo.com.br/", "listarLivrosPaginacaoResponse");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: br.com.edivaldo.livros.estoque.servicos
@@ -88,7 +88,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link ListarLivros }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://servicos.estoque.knight.com/", name = "listarLivros")
+    @XmlElementDecl(namespace = "http://servicos.estoque.livros.edivaldo.com.br/", name = "listarLivros")
     public JAXBElement<ListarLivros> createListarLivros(ListarLivros value) {
         return new JAXBElement<ListarLivros>(_ListarLivros_QNAME, ListarLivros.class, null, value);
     }
@@ -97,7 +97,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link ListarLivrosPaginacao }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://servicos.estoque.knight.com/", name = "listarLivrosPaginacao")
+    @XmlElementDecl(namespace = "http://servicos.estoque.livros.edivaldo.com.br/", name = "listarLivrosPaginacao")
     public JAXBElement<ListarLivrosPaginacao> createListarLivrosPaginacao(ListarLivrosPaginacao value) {
         return new JAXBElement<ListarLivrosPaginacao>(_ListarLivrosPaginacao_QNAME, ListarLivrosPaginacao.class, null, value);
     }
@@ -106,7 +106,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link ListarLivrosResponse }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://servicos.estoque.knight.com/", name = "listarLivrosResponse")
+    @XmlElementDecl(namespace = "http://servicos.estoque.livros.edivaldo.com.br/", name = "listarLivrosResponse")
     public JAXBElement<ListarLivrosResponse> createListarLivrosResponse(ListarLivrosResponse value) {
         return new JAXBElement<ListarLivrosResponse>(_ListarLivrosResponse_QNAME, ListarLivrosResponse.class, null, value);
     }
@@ -115,7 +115,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link ListarLivrosPaginacaoResponse }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://servicos.estoque.knight.com/", name = "listarLivrosPaginacaoResponse")
+    @XmlElementDecl(namespace = "http://servicos.estoque.livros.edivaldo.com.br/", name = "listarLivrosPaginacaoResponse")
     public JAXBElement<ListarLivrosPaginacaoResponse> createListarLivrosPaginacaoResponse(ListarLivrosPaginacaoResponse value) {
         return new JAXBElement<ListarLivrosPaginacaoResponse>(_ListarLivrosPaginacaoResponse_QNAME, ListarLivrosPaginacaoResponse.class, null, value);
     }
